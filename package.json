@@ -1,5 +1,5 @@
 {
-  "name": "sensitive-words",
+  "name": "sensitive-words-augie ",
   "version": "1.0.0",
   "description": "Filters out a list of sensitive words",
   "main": "build/index.js",
@@ -7,7 +7,9 @@
     "dev": "watch 'npm run build' src",
     "build": "babel src -d build",
     "test": "jest",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "prepare": "npm run build ",
+    "release": "np"
   },
   "babel": {
     "presets": [
@@ -34,6 +36,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "jest": "^24.9.0",
+    "np": "^5.0.3",
     "watch": "^1.0.2"
   }
 }
