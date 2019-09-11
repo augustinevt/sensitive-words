@@ -1,0 +1,39 @@
+{
+  "name": "sensitive-words",
+  "version": "1.0.0",
+  "description": "Filters out a list of sensitive words",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augustinevt/sensitive-words.git"
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "sensitive",
+    "words"
+  ],
+  "author": "Augustine von Trapp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/augustinevt/sensitive-words/issues"
+  },
+  "homepage": "https://github.com/augustinevt/sensitive-words#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^24.9.0",
+    "watch": "^1.0.2"
+  }
+}
