@@ -1,5 +1,5 @@
 {
-  "name": "sensitive-words-augie ",
+  "name": "sensitive-words-augie",
   "version": "1.0.0",
   "description": "Filters out a list of sensitive words",
   "main": "build/index.js",
@@ -11,10 +11,10 @@
     "prepare": "npm run build ",
     "release": "np"
   },
-  "babel": {
-    "presets": [
-      "env"
-    ]
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   },
   "repository": {
     "type": "git",
@@ -33,10 +33,12 @@
   },
   "homepage": "https://github.com/augustinevt/sensitive-words#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
     "jest": "^24.9.0",
     "np": "^5.0.3",
     "watch": "^1.0.2"
-  }
+  },
+  "dependencies": {}
 }

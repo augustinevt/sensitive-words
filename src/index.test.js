@@ -1,4 +1,4 @@
-import sensitiveWords from '.'
+import { sensitiveWords } from '.'
 
 test('replaces blacklisted words with asterisks', () => {
   expect(sensitiveWords(
